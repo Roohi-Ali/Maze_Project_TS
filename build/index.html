@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difficult Maze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Maze Game</h1>
+    <div class="div2">
+        <label for="level" >Choose Level:</label>
+        <select name="level" id="level" class="opt">
+            <option value="easy" class="opt">Easy</option>
+            <option value="medium" class="opt">Medium</option>
+            <option value="hard" class="opt">Hard</option>
+        </select>
+        <input type="submit" value="Start Game" id="submit_level"/> 
+    </div>
+    <canvas id = "mycanvas"></canvas>
+    
+    <div class="winDiv hidden">
+        <button class="btn-close" id="close1">X</button>
+        <img src="smiley.gif" width="150" height="150" class="smileyImg">
+            <p>You Have Won</p>
+            <p id="p_steps"></p>
+            <button class="btn">Play Again</button>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class = "instr hidden">
+        <button class="btn-close" id="close2">X</button>
+        <img src="boy.png" width="150" height="150" class="boyimg">
+        <p>Help the boy reach his home by solving the Maze</p>
+        <p>Press the Arrow Keys, Up, Down, Right, Left to navigate the Maze.</p>
+        <p>GOOD LUCK</p>
+        <button class="btn" id="okbtn">OK</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src = "..\..\public\main.js"></script>
+</body>
+</html>
